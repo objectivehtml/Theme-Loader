@@ -15,7 +15,7 @@
  * @version		1.1.0
  * @build		20120801
  */
-
+ 
 if(!class_exists('Theme_loader'))
 {
 	class Theme_loader {
@@ -64,7 +64,7 @@ if(!class_exists('Theme_loader'))
 			}
 			else
 			{
-				$this->EE->config->item('theme_folder_path');
+				return rtrim($this->EE->config->item('theme_folder_path'), '/').'/third_party/';
 			}
 		}
 		
@@ -76,7 +76,7 @@ if(!class_exists('Theme_loader'))
 			}
 			else
 			{
-				return $this->EE->config->item('theme_folder_url');
+				return rtrim($this->EE->config->item('theme_folder_url'), '/').'/third_party/';
 			}
 		}	
 		
@@ -109,7 +109,7 @@ if(!class_exists('Theme_loader'))
 			if(!$this->is_valid_url($file))
 			{
 				$file 	= str_replace('.js', '', $file);
-				$file 	= $this->theme_url() . 'third_party/' . $this->module_name . '/' . $directory . '/' . $file . $ext;
+				$file 	= $this->theme_url() . $this->module_name . '/' . $directory . '/' . $file . $ext;
 			}
 			
 			return $file;	
