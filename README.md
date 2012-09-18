@@ -27,7 +27,13 @@ Theme Loader is very easy to use. Simple instantiate the Theme Loader class by p
 	$this->EE->load->library('theme_loader', array(
 		'module_name' => 'postmaster' // Your module name goes here
 	));
+
+If the Theme Loader object is already instantiated, you can update the module name like so:
+
+	$this->EE->theme_loader->module_name = 'postmaster';
 	
+*The module_name should be the value of your module directory. So all lowercase is recommended.*
+
 ---
 
 ### Methods
