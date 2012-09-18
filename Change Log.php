@@ -14,7 +14,13 @@
  * @link 		http://www.objectivehtml.com/
  */
  
- Version 1.1.0 - 04/17/2012
+ Version 1.2.0 - 09/18/2012
+ --------------------------
+ - Added README with basic documentation
+ - Added better code comments
+ - Added support for 'path_third_themes' and 'url_third_themes' hidden config variables
+ 
+ Version 1.1.0 - 08/01/2012
  --------------------------
  Updated library to respect environmental constants
  
