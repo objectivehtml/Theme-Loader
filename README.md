@@ -56,7 +56,7 @@ Returns a valid url to the add-on's theme folder
 	
 #### theme_path()
 	
-Returns a valid url to the add-on's theme file path
+Returns a valid file path to the add-on theme files
 
 	$this->EE->theme_load->theme_path();
 
