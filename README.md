@@ -19,7 +19,7 @@ Theme Loader is a CodeIgniter library that allows developer to easily determine 
 
 ### Asynchronous Javascript (require.js)
 
-Thanks to Christopher Imrie's brilliant work on RequireJS for EE you can now use Theme Loader automatically with load JavaScript resources automatically (and asynchronously) using require.js. If the RequireJS for EE extension is installed, Theme Loader will automatically use those resources to load the files - otherwise the scripts are loaded normally.
+Thanks to Christopher Imrie's brilliant work on RequireJS for EE, you can now use Theme Loader automatically load JavaScript resources (asynchronously) using require.js. If the RequireJS for EE extension is installed, Theme Loader will automatically use those resources to load the javascript files - otherwise the scripts are loaded normally.
 
 [https://github.com/ckimrie/RequireJS-for-EE](https://github.com/ckimrie/RequireJS-for-EE)
 
