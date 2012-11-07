@@ -1,0 +1,37 @@
+/**
+ * Theme Loader
+ *
+ * A helper class that allows developers to easily add CSS and JS 
+ * packages from the associating third party theme directory.
+ *
+ * @package	Theme Loader
+ * @subpackage	Libraries
+ * @category	Library
+ * @author	Justin Kimbrell
+ * @copyright	Copyright (c) 2011, Justin Kimbrell
+ * @link 	http://www.objectivehtml.com/
+ */
+ 
+ Version 1.3.0 - 11/06/2012
+ --------------------------
+ - Added compatibility for Chris Imrie's RequireJS for EE extension.
+ - Added new parameters to return the theme url (instead of the third party theme url)
+ - Added new parameter to append a string to the string returned by theme_url and theme_path.
+ 
+ Version 1.2.1 - 09/19/2012
+ --------------------------
+ - Fixed an issue that caused a PHP error if the module name was not set.
+ 
+ Version 1.2.0 - 09/18/2012
+ --------------------------
+ - Added README with basic documentation
+ - Added better code comments
+ - Added support for 'path_third_themes' and 'url_third_themes' hidden config variables
+ 
+ Version 1.1.0 - 08/01/2012
+ --------------------------
+ - Updated library to respect environmental constants
+ 
+ Version 1.0.0 - 04/17/2012
+ --------------------------
+ - Initial Release

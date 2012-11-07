@@ -17,6 +17,12 @@
 
 Theme Loader is a CodeIgniter library that allows developer to easily determine the file path and URL of theme directories. With so many different ways to define a URL path with multiple environment bootstraps, it's critical that a library handle this to make things easy and consistent.
 
+### Asynchronous Javascript (require.js)
+
+Thanks to Christopher Imrie's brilliant work on RequireJS for EE you can now use Theme Loader automatically with load JavaScript resources automatically (and asynchronously) using require.js. If the RequireJS for EE extension is installed, Theme Loader will automatically use those resources to load the files - otherwise the scripts are loaded normally.
+
+[https://github.com/ckimrie/RequireJS-for-EE](https://github.com/ckimrie/RequireJS-for-EE)
+
 ---
 
 ### How to Use
