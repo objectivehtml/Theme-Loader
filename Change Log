@@ -12,6 +12,10 @@
  * @link 	http://www.objectivehtml.com/
  */
  
+ Version 1.3.1 - 11/06/2012
+ --------------------------
+ - Added new output() method to add JS to the head, or the RequireJS callback (if installed).
+
  Version 1.3.0 - 11/06/2012
  --------------------------
  - Added compatibility for Chris Imrie's RequireJS for EE extension.
