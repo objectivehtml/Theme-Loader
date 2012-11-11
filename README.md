@@ -1,6 +1,6 @@
 # Theme Loader
 
-#### Version 1.3.0 (2012-11-06)
+#### Version 1.3.1 (2012-11-12)
 
 ---
 
@@ -44,15 +44,19 @@ If the Theme Loader object is already instantiated, you can update the module na
 
 ### Methods
 
-#### css($file)
+#### css($file, $callback = FALSE)
 
 Add a CSS file to the document head.
 
 	#this->EE->theme_loader->css('postmaster');
 
-#### js($file)
+#### js($file, $callback = FALSE)
 
 	#this->EE->theme_loader->js('postmaster');
+
+#### output($js)
+
+	#this->EE->theme_loader->output('alert("Do Something");');
 
 #### theme_url()
 	
