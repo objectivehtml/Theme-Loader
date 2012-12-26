@@ -12,8 +12,8 @@
  * @author		Justin Kimbrell
  * @copyright	Copyright (c) 2011, Justin Kimbrell
  * @link 		http://www.objectivehtml.com/libraries/channel_data
- * @version		1.3.1
- * @build		20121107
+ * @version		1.3.3
+ * @build		20121226
  */
  
 if(!class_exists('Theme_loader'))
@@ -203,8 +203,13 @@ if(!class_exists('Theme_loader'))
 					$this->EE->requirejs->add($file, $callback);
 				}
 				else
-				{					
-					$this->EE->cp->add_to_head('<script type="text/javascript" src="'.$file.'?v='.time().'"></script>');
+				{		
+					if(!preg_match('/(http|https):\/\//', $file))
+					{			
+						$file = $file.(preg_match('/\?/', $file) ? '&' : '?').'v='.time();
+					}
+					
+					$this->EE->cp->add_to_head('<script type="text/javascript" src="'.$file.'"></script>');
 				}
 			}
 		}
