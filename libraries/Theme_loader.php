@@ -12,8 +12,8 @@
  * @author		Justin Kimbrell
  * @copyright	Copyright (c) 2011, Justin Kimbrell
  * @link 		http://www.objectivehtml.com/libraries/channel_data
- * @version		1.3.3
- * @build		20121226
+ * @version		1.3.4
+ * @build		20130109
  */
  
 if(!class_exists('Theme_loader'))
@@ -189,8 +189,6 @@ if(!class_exists('Theme_loader'))
 			
 			if(!in_array($file, $this->loaded_files))
 			{
-				$this->loaded_files[] = $file;
-			
 				if($this->requirejs())
 				{
 					if(preg_match("/^".str_replace('/', '\/', $this->theme_url())."/", $file))
@@ -204,13 +202,13 @@ if(!class_exists('Theme_loader'))
 				}
 				else
 				{		
-					if(!preg_match('/(http|https):\/\//', $file))
-					{			
-						$file = $file.(preg_match('/\?/', $file) ? '&' : '?').'v='.time();
-					}
 					
+					$file = $file.(preg_match('/\?/', $file) ? '&' : '?').'_v_='.time();
+							
 					$this->EE->cp->add_to_head('<script type="text/javascript" src="'.$file.'"></script>');
 				}
+				
+				$this->loaded_files[] = $file;
 			}
 		}
 		
