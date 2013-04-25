@@ -12,6 +12,10 @@
  * @link 	http://www.objectivehtml.com/
  */
 
+ Version 1.4.0 - 04/25/2013
+ --------------------------
+ - Added compatibility for the add_to_foot method for EE 2.6 which requires JS to be loaded with it vs. the head.
+
  Version 1.3.3 - 12/26/2012
  --------------------------
  - Fixed a bug caused by the last update that wouldn't load some external scripts correctly.
