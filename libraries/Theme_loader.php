@@ -205,7 +205,7 @@ if(!class_exists('Theme_loader'))
 					$file   = $file.(preg_match('/\?/', $file) ? '&' : '?').'_v_='.time();
 					$script = '<script type="text/javascript" src="'.$file.'"></script>';
 					
-					if(isset($this->EE->cp->add_to_foot))
+					if(method_exists($this->EE->cp, 'add_to_foot'))
 					{	
 						$this->EE->cp->add_to_foot($script);
 					}
