@@ -12,8 +12,8 @@
  * @author		Justin Kimbrell
  * @copyright	Copyright (c) 2011, Justin Kimbrell
  * @link 		http://www.objectivehtml.com/libraries/channel_data
- * @version		1.4.0
- * @build		20130425
+ * @version		1.4.1
+ * @build		20130429
  */
  
 if(!class_exists('Theme_loader'))
@@ -205,7 +205,7 @@ if(!class_exists('Theme_loader'))
 					$file   = $file.(preg_match('/\?/', $file) ? '&' : '?').'_v_='.time();
 					$script = '<script type="text/javascript" src="'.$file.'"></script>';
 					
-					if(method_exists($this->EE->cp, 'add_to_foot'))
+					if(!$this->is_valid_url($file) && method_exists($this->EE->cp, 'add_to_foot'))
 					{	
 						$this->EE->cp->add_to_foot($script);
 					}

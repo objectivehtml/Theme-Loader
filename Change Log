@@ -12,6 +12,10 @@
  * @link 	http://www.objectivehtml.com/
  */
 
+ Version 1.4.1 - 04/29/2013
+ --------------------------
+ - Fixed an issue with JS breaking the page in EE 2.6 if loading an external URL from the footer (in the CP).
+
  Version 1.4.0 - 04/25/2013
  --------------------------
  - Added compatibility for the add_to_foot method for EE 2.6 which requires JS to be loaded with it vs. the head.
