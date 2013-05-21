@@ -12,6 +12,11 @@
  * @link 	http://www.objectivehtml.com/
  */
 
+ Version 1.4.2 - 05/21/2013
+ --------------------------
+ - Fixed an issue with JS getting loaded twice if it was an external script. 
+ - Fixed an issue causing the _v_=time() to get appended to external scripts.
+
  Version 1.4.1 - 04/29/2013
  --------------------------
  - Fixed an issue with JS breaking the page in EE 2.6 if loading an external URL from the footer (in the CP).
